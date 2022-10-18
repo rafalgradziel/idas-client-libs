@@ -54,7 +54,7 @@ export class IDAS {
             authUrlCallback = authUrlCallback.replace('%target%', encodeURIComponent(window.location.href));
 
             const url = new URL(apiBaseUrl);
-            url.pathname = "/Session";
+            url.pathname = "/Session/Index";
             url.search = `?a=${appToken}&r=${encodeURIComponent(authUrlCallback)}`;
             let jwtUrl = url.toString();
 
